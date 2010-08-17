@@ -1,10 +1,19 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :checkout_statuses
+
+  map.resources :users
   map.resources :categories
-
+  map.root :controller => 'users', :action => 'new'
   map.resources :videos
+  map.resources :sessions, :only => [:new, :create, :destroy]
+  map.signup '/signup',   :controller => 'users', :action => 'new'
+  map.signin  '/signin',  :controller => 'sessions', :action => 'new'
+  map.signout '/signout', :controller => 'sessions', :action => 'destroy'
+  map.checkout '/checkout/:id', :controller => 'videos', :action => 'checkout'
 
+  #map.signup '/signup', :controller => 'users', :action => 'signup'
   # The priority is based upon order of creation: first created -> highest priority.
-
+ 
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action

@@ -1,0 +1,7 @@
+<%= f.collection_select :category, @categories, :id, :name %>
+<%= select_tag(:category, "<option>Select a Category</option>" + options_from_collection_for_select(@categories, :id, :name)) %>
+
+
+
+Riverwood Elementary
+(901) 416-2310 

@@ -1,0 +1,21 @@
+<h1>Listing checkout_statuses</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Video</th>
+  </tr>
+
+<% @checkout_statuses.each do |checkout_status| %>
+  <tr>
+    <td><%=h checkout_status.user_id %></td>
+    <td><%=h checkout_status.video_id %></td>
+    <td><%= link_to 'Show', checkout_status %></td>
+    <td><%= link_to 'Destroy', checkout_status, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New checkout_status', new_checkout_status_path %>

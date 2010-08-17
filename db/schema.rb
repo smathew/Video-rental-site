@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100811154936) do
+ActiveRecord::Schema.define(:version => 20100817190258) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -17,9 +17,32 @@ ActiveRecord::Schema.define(:version => 20100811154936) do
     t.datetime "updated_at"
   end
 
+  create_table "checkout_statuses", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "video_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.string   "password_confirm"
+    t.string   "phone_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "remember_token"
+    t.string   "salt"
+    t.string   "encrypted_password"
+    t.boolean  "admin"
+  end
+
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+
   create_table "videos", :force => true do |t|
     t.string   "title"
-    t.string   "category"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

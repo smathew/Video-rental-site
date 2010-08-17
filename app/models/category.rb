@@ -10,6 +10,7 @@
 #
 
 class Category < ActiveRecord::Base
-  attr_accessible :name
-  has_many :videos
+  #attr_accessible :name
+  has_many :videos, :dependent => :destroy
+  validates_length_of :name, :maximum => 100
 end

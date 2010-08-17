@@ -1,0 +1,13 @@
+<p>
+  <b>User:</b>
+  <%=h @checkout_status.user_id %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%=h @checkout_status.video_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_checkout_status_path(@checkout_status) %> |
+<%= link_to 'Back', checkout_statuses_path %>

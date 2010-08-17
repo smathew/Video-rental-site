@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :category %><br />
-    <%= f.text_field :category %>
+	<%= collection_select(:video, :category_id, Category.all, :id, :name, {:selected => @video.category.id}) %>
   </p>
   <p>
     <%= f.submit 'Update' %>

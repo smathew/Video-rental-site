@@ -1,13 +1,13 @@
 # == Schema Information
-# Schema version: 20100811154936
+# Schema version: 20100812160521
 #
 # Table name: videos
 #
-#  id         :integer         not null, primary key
-#  title      :string(255)
-#  category   :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  category_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

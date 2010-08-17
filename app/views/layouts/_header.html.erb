@@ -1,0 +1,16 @@
+<div id="header">
+  <%= image_tag("rental.jpg", :alt => "test image") %> 
+  <%= link_to image_tag("rental.jpg"), root_path %>
+  <ul>
+    <li><%= link_to "Home", signin_path %></li>
+    <% if signed_in? %>
+    <li><%= link_to "Profile", current_user %></li>
+    <% end %>
+    <li><%= link_to "Help", root_path %></li>
+    <% if signed_in? %>
+    <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+    <% else %>
+    <li><%= link_to "Sign in", signin_path %></li>
+    <% end %>
+  </ul>
+</div>

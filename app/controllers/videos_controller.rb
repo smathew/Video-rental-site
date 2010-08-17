@@ -1,4 +1,5 @@
 class VideosController < ApplicationController
+  before_filter :authenticate
   # GET /videos
   # GET /videos.xml
   def index
@@ -20,12 +21,19 @@ class VideosController < ApplicationController
       format.xml  { render :xml => @video }
     end
   end
+  
+  def checkout
+    @video = Video.find(params[:id])
+    respond_to do |format|
+      format.html # checkout.html.erb
+      format.xml  { render :xml => @video }
+    end
+  end
 
   # GET /videos/new
   # GET /videos/new.xml
   def new
     @video = Video.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @video }
@@ -41,7 +49,7 @@ class VideosController < ApplicationController
   # POST /videos.xml
   def create
     @video = Video.new(params[:video])
-
+	
     respond_to do |format|
       if @video.save
         flash[:notice] = 'Video was successfully created.'

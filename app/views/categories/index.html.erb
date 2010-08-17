@@ -1,16 +1,14 @@
 <h1>Listing categories</h1>
 
-<table>
-  <tr>
+<table class="profile">
+  <tr class="main">
     <th>Name</th>
   </tr>
 
 <% @categories.each do |category| %>
-  <tr>
+  <tr class="main">
     <td><%=h category.name %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_category_path(category) %>    <%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

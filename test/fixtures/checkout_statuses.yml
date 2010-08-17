@@ -1,0 +1,21 @@
+# == Schema Information
+# Schema version: 20100816195102
+#
+# Table name: checkout_statuses
+#
+#  id         :integer         not null, primary key
+#  user_id    :integer
+#  video_id   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  video_id: 1
+
+two:
+  user_id: 1
+  video_id: 1

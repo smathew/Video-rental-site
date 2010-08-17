@@ -1,7 +1,9 @@
 class CategoriesController < ApplicationController
+  before_filter :authenticate
   # GET /categories
   # GET /categories.xml
   def index
+    @title = "Video Category"
     @categories = Category.all
 
     respond_to do |format|
@@ -13,6 +15,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.xml
   def show
+    @title = "Category List"
     @category = Category.find(params[:id])
 
     respond_to do |format|
@@ -24,6 +27,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   # GET /categories/new.xml
   def new
+    @title = "New Category"
     @category = Category.new
 
     respond_to do |format|
@@ -34,6 +38,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1/edit
   def edit
+	@title = "Edit Category"
     @category = Category.find(params[:id])
   end
 
@@ -57,6 +62,7 @@ class CategoriesController < ApplicationController
   # PUT /categories/1
   # PUT /categories/1.xml
   def update
+	@title = "Update Category"
     @category = Category.find(params[:id])
 
     respond_to do |format|
@@ -74,6 +80,7 @@ class CategoriesController < ApplicationController
   # DELETE /categories/1
   # DELETE /categories/1.xml
   def destroy
+	@title = "Remove Category"
     @category = Category.find(params[:id])
     @category.destroy
 

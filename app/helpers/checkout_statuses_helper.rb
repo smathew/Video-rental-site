@@ -1,0 +1,2 @@
+module CheckoutStatusesHelper
+end
