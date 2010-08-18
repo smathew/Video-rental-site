@@ -1,18 +1,16 @@
 	<h1>Listing videos</h1>
 
-	<table>
-	  <tr>
+	<table class="profile">
+	  <tr class="main">
 		<th>Title</th>
 		<th>Category</th>
 	  </tr>
 
 	<% @videos.each do |video| %>
-	  <tr>
+	  <tr class="main">
 		<td><%=h video.title %></td>
-		<td><%=h video.category.name %></td>
-		<td><%= link_to 'Details', video %></td>
-		<td><%= link_to 'Edit', edit_video_path(video) %></td>
-		<td><%= link_to 'Destroy', video, :confirm => 'Are you sure you want to remove the video from the list?', :method => :delete %></td>
+		<td><%= link_to video.category.name, video.category %></td>
+		<td><%= link_to 'Details', video %>  <%= link_to 'Edit', edit_video_path(video) %>  <%= link_to 'Destroy', video, :confirm => 'Are you sure you want to remove the video from the list?', :method => :delete %></td>
 	  </tr>
 	<% end %>
 	</table>
