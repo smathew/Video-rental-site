@@ -1,0 +1,16 @@
+<% @user ||= current_user %>
+<table class="profile">
+  <tr class="main">
+	<th><u>Title</u></th>
+	<th><u>Category</u></th>
+  </tr>
+  <tr><td></td></tr>
+  <% @user.checkout_statuses.each do |checkout| %>
+  <tr class="main">
+    <td><%= checkout.video.title %></td>
+    <td><%= checkout.video.category.name %></td>
+	<td>
+		<%= link_to 'Return Video', checkout, :confirm => 'Are you sure you want to return the video?', :method => :delete %></td>
+  </tr>
+  <%- end -%>
+</table>

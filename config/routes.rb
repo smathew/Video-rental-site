@@ -4,14 +4,18 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :categories
   map.root  :controller => 'sessions', :action => 'new'
-  map.resources :videos
+  map.resources :videos do |v|
+	v.resources :checkout_statuses
+  end
   map.resources :sessions, :only => [:new, :create, :destroy]
   map.signup '/signup',   :controller => 'users', :action => 'new'
   map.signin  '/signin',  :controller => 'sessions', :action => 'new'
   map.signout '/signout', :controller => 'sessions', :action => 'destroy'
+  #map.signout '/signout', :controller => 'sessions', :action => 'new'
   map.checkout '/checkout/:id', :controller => 'videos', :action => 'checkout'
   map.home  '/home',  :controller => 'sessions', :action => 'home'
-  
+  map.info '/info', :controller => 'sessions', :action => 'info'
+  map.videocollection '/videocollection', :controller => 'users'
 
   #map.signup '/signup', :controller => 'users', :action => 'signup'
   # The priority is based upon order of creation: first created -> highest priority.

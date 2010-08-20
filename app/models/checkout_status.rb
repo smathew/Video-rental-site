@@ -11,7 +11,10 @@
 #
 
 class CheckoutStatus < ActiveRecord::Base
-  has_many :users, :dependent => :destroy
-  has_many :videos, :dependent => :destroy
+  attr_accessible :video_id
+
+  belongs_to :user
+  belongs_to :video
+ 
   validates_presence_of :user_id, :video_id
 end

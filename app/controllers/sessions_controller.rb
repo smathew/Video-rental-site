@@ -12,12 +12,13 @@ class SessionsController < ApplicationController
       render 'new'
     else
       sign_in user
-      redirect_to user
+      #redirect_to user
+	  redirect_to home_path
     end
   end
 
   def destroy
     sign_out
-    redirect_to root_path
+	redirect_to signin_path
   end
 end

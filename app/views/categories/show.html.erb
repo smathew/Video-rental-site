@@ -3,7 +3,8 @@
   <b>Name:</b>  <%=h @category.name %>
 </p><br />
 
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Category list', categories_path %>
+<% if current_user.admin? %>
+	<%= link_to 'Edit', edit_category_path(@category) %> |
+<% end %>
+<%= link_to 'Category list', categories_path %> | 
 <%= link_to 'Video list', videos_path %>

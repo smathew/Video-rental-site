@@ -1,6 +1,10 @@
-body { background-color: #ebc; color: #333; text-align: center; }
+body {
+	background-color: #ffc273; 
+	color: #333; 
+	text-align: center; 
+}
 
-body, p, ol, ul, td {
+ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
@@ -13,8 +17,8 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
+a { color: #1F0A05; }
+a:visited { color: #334433; }
 a:hover { color: #fff; background-color:#000; }
 
 #content {
@@ -27,7 +31,7 @@ a:hover { color: #fff; background-color:#000; }
 
 #container{
 	text-align: center;
-	background-color: green;
+	background-color: #ffc273;
 }
 
 .fieldWithErrors {
@@ -73,6 +77,6 @@ table.profile {
 tr.main {
   width: 50%;
   margin-bottom: 0;
-  align: center;
+  text-align: center;
 }
 

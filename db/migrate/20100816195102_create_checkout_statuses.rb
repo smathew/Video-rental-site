@@ -6,6 +6,8 @@ class CreateCheckoutStatuses < ActiveRecord::Migration
 
       t.timestamps
     end
+	add_index :checkout_statuses, :user_id
+    add_index :checkout_statuses, :video_id
   end
 
   def self.down

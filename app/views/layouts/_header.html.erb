@@ -1,11 +1,24 @@
 <div id="header">
-  <%= image_tag("rental.jpg", :alt => "Header image", :width => 1000, :height => 120) %> <br />
+  <%= image_tag("rental1.jpg", :alt => "Header image", :width => 1000, :height => 100) %>
+  <p align="center">
+    <%= image_tag("rental.jpg", :alt => "2Header image", :width => 500, :height => 90) %> 
+    <br /><br />
     <% if signed_in? %>
-	  <%= link_to "Home", home_path %>
-      <%= link_to "Profile", current_user %>
+	  <%= link_to "Home", home_path %> | 
+      <%= link_to "Profile", current_user %> | 
+	  <%= link_to "Checked out videos", checkout_statuses_path %> | 
+	  <%= link_to "List of all Videos", videos_path %> | 
+	  <% if current_user.admin? %>
+		<%= link_to "Add or Edit Categories", categories_path %> | 
+	  <% end %>
     <% end %>
-    <%= link_to "Help", root_path %>
+	<% if !signed_in? %>
+		<%= link_to "Sign In", signin_path %> | 
+	<% end %>
+    <%= link_to "Information", info_path %> | 
     <% if signed_in? %>
       <%= link_to "Sign out", signout_path, :method => :delete %>
     <% end %>
+	<br /><br />
+  </p>
 </div>

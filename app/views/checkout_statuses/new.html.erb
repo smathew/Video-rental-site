@@ -1,18 +1,10 @@
-<h1>New checkout_status</h1>
+<h3>Video Checkout Confirmation</h3>
 
-<% form_for(@checkout_status) do |f| %>
+<% form_for([@video, @checkout_status]) do |f| %>
   <%= f.error_messages %>
-
+  You are about to checkout video <%= @video.title %>. Are you sure you want to continue?
   <p>
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </p>
-  <p>
-    <%= f.label :video_id %><br />
-    <%= f.text_field :video_id %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Continue' %>  <%= link_to 'No, Return to Video collection', videos_path %>
   </p>
 <% end %>
 

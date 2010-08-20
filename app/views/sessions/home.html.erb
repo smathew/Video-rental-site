@@ -1,9 +1,29 @@
+<% @user ||= current_user %>
+
 <table class="profile">
+  <tr>
+	<td>
+	  Welcome <b><%= @user.name %></b>
+	  <% if current_user.admin? %>
+	    <br />
+		<b>Reminder:</b> You've admin rights as you are an administrator!
+	  <% end %>
+	</td>
+  </tr>
   <tr bgcolor="#FFA500" class="main">
     <td colspan="2" valign="top"><div align="center">Welcome Film Lovers... </div></td>
   </tr>
   <tr> 
     <td>Hello and welcome to Your Video rentals -- the first and last online video store operated from Memphis, Tennesse. Video Rentals caters to film fans (and fanatics) who have grown tired of the typical Blockbuster fare. We specialize in international, independent, classic American and Art House films on DVD (with a handful of VHS tapes left over that have never been released on DVD). With over 36,000+ DVDs and close to 1,700 BluRay discs, Video Rentals has the largest selection of movies in the entire USA. We get new movies every week -- if you want to be kept up to date about them sign up for our weekly e-mail update or check out our New Arrivals page. Membership is free (requiring only 2 photo IDs, or an ID and credit card) and rentals can be as cheap as $1.00 per disc and will be charged automatically from your credit card when you checkout a movie for viewing, so come on and check out what you've been missing! 
 	</td>
+  </tr>
+  <tr><td><hr /></td></tr>
+  <tr><td></td></tr>
+  <tr align="center">
+    <td>
+      <a href="<%= user_path(@user) %>">
+          <%= @user.checkout_statuses.count %> Checked out videos
+      </a>
+    </td>
   </tr>
 </table>

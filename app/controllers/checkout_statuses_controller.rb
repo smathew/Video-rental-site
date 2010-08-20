@@ -1,63 +1,31 @@
 class CheckoutStatusesController < ApplicationController
-  # GET /checkout_statuses
-  # GET /checkout_statuses.xml
-  def index
-    @checkout_statuses = CheckoutStatus.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @checkout_statuses }
-    end
-  end
-
-  # GET /checkout_statuses/1
-  # GET /checkout_statuses/1.xml
-  def show
-    @checkout_status = CheckoutStatus.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @checkout_status }
-    end
-  end
-
-  # GET /checkout_statuses/new
-  # GET /checkout_statuses/new.xml
+   before_filter :authenticate
+  
+  ## JOSH
   def new
-    @checkout_status = CheckoutStatus.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @checkout_status }
-    end
+	@checkout_status = CheckoutStatus.new
+	@video = Video.find( params[:video_id] )
   end
+  ## JOSH
 
-  # POST /checkout_statuses
-  # POST /checkout_statuses.xml
   def create
-    @checkout_status = CheckoutStatus.new(params[:checkout_status])
-
-    respond_to do |format|
-      if @checkout_status.save
-        flash[:notice] = 'CheckoutStatus was successfully created.'
-        format.html { redirect_to(@checkout_status) }
-        format.xml  { render :xml => @checkout_status, :status => :created, :location => @checkout_status }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @checkout_status.errors, :status => :unprocessable_entity }
-      end
-    end
+	@video = Video.find( params[:video_id] )
+	@checkout_status = CheckoutStatus.new
+	@checkout_status.user = current_user
+	@checkout_status.video = @video
+	@checkout_status.save
+	flash[:notice] = "Video checked out. To avoid late fees, return in 10 days after receiving the video"
+	#redirect_to @video
+	redirect_to current_user
   end
-
-  # DELETE /checkout_statuses/1
-  # DELETE /checkout_statuses/1.xml
+  
+  def index
+	@user = current_user
+  end
+  
   def destroy
-    @checkout_status = CheckoutStatus.find(params[:id])
-    @checkout_status.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(checkout_statuses_url) }
-      format.xml  { head :ok }
-    end
+	@checkout_status = CheckoutStatus.find( params[:id] )
+	@checkout_status.delete
+    redirect_to current_user
   end
 end

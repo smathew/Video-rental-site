@@ -12,8 +12,9 @@
 
 class Video < ActiveRecord::Base
   belongs_to :category 
-  has_and_belongs_to_many :users 
-  #belongs_to :checkout_statuses
+  has_many :users 
+  has_many :checkout_statuses, :dependent => :destroy
+
   validates_presence_of :title, :message => "needs to be entered"
   validates_length_of :title, :maximum => 200
 end

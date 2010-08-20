@@ -2,19 +2,35 @@
 
 	<table class="profile">
 	  <tr class="main">
-		<th>Title</th>
-		<th>Category</th>
+		<th><u>Title</u></th>
+		<th><u>Category</u></th>
 	  </tr>
-
-	<% @videos.each do |video| %>
-	  <tr class="main">
-		<td><%=h video.title %></td>
-		<td><%= link_to video.category.name, video.category %></td>
-		<td><%= link_to 'Details', video %>  <%= link_to 'Edit', edit_video_path(video) %>  <%= link_to 'Destroy', video, :confirm => 'Are you sure you want to remove the video from the list?', :method => :delete %></td>
-	  </tr>
-	<% end %>
+	  <tr><td></td></tr>
+		<% @videos.each do |video| %>
+		  <tr class="main">
+			<td><%=h video.title %></td>
+			<td><%= link_to video.category.name, video.category %></td>
+			<td><%= link_to 'Details', video %>  
+			<% if current_user.admin? %>
+			  <%= link_to 'Edit', edit_video_path(video) %>
+			  <% @count = 0 %>
+				<% @checkout_statuses.each do |chkoutstat| %>
+					<% if chkoutstat.video_id == video.id %>
+						<% @count += 1 %>
+					<% end %>
+				<% end %>
+				<% if @count == 0 %>
+					<%= link_to 'Destroy', video, :confirm => 'Are you sure you want to remove the video from the list?', :method => :delete %>
+				<% else %>
+					<%= link_to 'Destroy', videos_url, :confirm => 'You cannot delete this video as it is checked out by some users' %>
+				<% end %>
+			<% end %>
+			</td>
+		  </tr>
+		<% end %>
 	</table>
 
 	<br />
-
-	<%= link_to 'New video', new_video_path %>
+	<% if current_user.admin? %>
+	  <%= link_to 'Add New Videos', new_video_path %>
+	<% end %>

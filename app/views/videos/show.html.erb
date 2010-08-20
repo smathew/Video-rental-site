@@ -1,12 +1,26 @@
-<p align="center">
-  <b>Title:</b>
-  <%=h @video.title %>
-</p>
 
-<p align="center">
-  <b>Category:</b>
-  <%=h @video.category.name %>
-</p>
-<%= link_to 'Checkout to Rent', checkout_path(@video), :confirm => "Are you sure you want to checkout the video?" %>
-<%= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>
+<% if @checkout_statuses.count != 1 %>
+  <p align="center">
+    <b>Title:</b>
+    <%=h @video.title %>
+  </p>
+
+  <p align="center">
+    <b>Category:</b>
+    <%=h @video.category.name %>
+  </p>
+  <%= link_to 'Checkout to Rent', new_video_checkout_status_path(@video) %> |
+  <%= link_to 'Back', videos_path %>
+<% else %>
+  You've already checked out this video.
+  <p align="center">
+    <b>Title:</b>
+    <%=h @video.title %>
+  </p>
+
+  <p align="center">
+    <b>Category:</b>
+    <%=h @video.category.name %>
+  </p>
+  Please select another from the list <%= link_to 'Video Collection', videos_path %>
+<% end %>

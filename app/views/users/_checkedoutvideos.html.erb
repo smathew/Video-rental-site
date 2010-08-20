@@ -1,0 +1,12 @@
+<% @user ||= current_user %>
+<p>
+	<b><u>Videos Checked Out</u></b><br />
+  <% if @user.checkout_statuses.count == 0 %>
+    You haven't checked out any videos for viewing. To checkout videos for viewing, please click on the Video's collection below for more options
+  <% else %>
+    <%= render :partial => 'videocollection' %>
+  <%- end -%>
+	<br />
+	<br />
+	<%= link_to 'Video Collections', videos_path %>
+</p>

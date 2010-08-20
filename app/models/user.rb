@@ -35,7 +35,9 @@
 require 'digest'
 class User < ActiveRecord::Base
   has_many :videos, :dependent => :destroy
-  belongs_to :checkout_statuses
+  #has_one :video
+  #belongs_to :checkout_statuses
+  has_many :checkout_statuses, :dependent => :destroy
   validates_presence_of :name, :email, :password, :password_confirm, :phone_number
   validates_confirmation_of :password
   validates_length_of :name, :within => 3..60
@@ -66,7 +68,7 @@ class User < ActiveRecord::Base
     return user if user.has_password?(submitted_password)
   end
   
-  private
+   private
 
     def encrypt_password
       unless password.nil?

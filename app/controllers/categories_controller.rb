@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
   def index
     @title = "Video Category"
     @categories = Category.all
+	#@video = Video.find(:all, :conditions => {:video.category.id => id}, :select => "id").map(&:id)
 
     respond_to do |format|
       format.html # index.html.erb

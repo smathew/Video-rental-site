@@ -4,7 +4,8 @@ class VideosController < ApplicationController
   # GET /videos.xml
   def index
     @videos = Video.all
-
+	#@checkout_statuses = CheckoutStatus.find(:all, :conditions => {:video_id => @video.id, :user_id => current_user.id}, :select => "video_id").map(&:video_id)
+	@checkout_statuses = CheckoutStatus.find(:all)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @videos }
@@ -15,21 +16,13 @@ class VideosController < ApplicationController
   # GET /videos/1.xml
   def show
     @video = Video.find(params[:id])
-
+	@checkout_statuses = CheckoutStatus.find(:all, :conditions => {:video_id => @video.id, :user_id => current_user.id}, :select => "video_id").map(&:video_id)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @video }
     end
   end
   
-  def checkout
-    @video = Video.find(params[:id])
-    respond_to do |format|
-      format.html # checkout.html.erb
-      format.xml  { render :xml => @video }
-    end
-  end
-
   # GET /videos/new
   # GET /videos/new.xml
   def new

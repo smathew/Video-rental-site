@@ -1,21 +1,26 @@
-<h1>Listing checkout_statuses</h1>
 
-<table>
-  <tr>
-    <th>User</th>
-    <th>Video</th>
-  </tr>
-
-<% @checkout_statuses.each do |checkout_status| %>
-  <tr>
-    <td><%=h checkout_status.user_id %></td>
-    <td><%=h checkout_status.video_id %></td>
-    <td><%= link_to 'Show', checkout_status %></td>
-    <td><%= link_to 'Destroy', checkout_status, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<h3><b><u>Videos Checked Out</u></b></h3><br />
+  <% if @user.checkout_statuses.count == 0 %>
+    You haven't checked out any videos for viewing. To checkout videos for viewing, please click on the Video's collection below for more options
+  <% else %>
+		<table align="center">
+	  <tr class="main">
+		<th><u>Title</u></th>
+		<th><u>Category</u></th>
+	  </tr>
+	  <tr><td></td></tr>
+	  <% @user.checkout_statuses.each do |checkout| %>
+	  <tr>
+		<td><%= checkout.video.title %>  -  </td>
+		<td><%= checkout.video.category.name %></td>
+		<td>
+			<%= link_to 'Return Video', checkout, :confirm => 'Are you sure you want to return the video?', :method => :delete %></td>
+	  </tr>
+	  <%- end -%>
+	</table>
+  <%- end -%>
+</p>
 <br />
-
-<%= link_to 'New checkout_status', new_checkout_status_path %>
+<p>
+	<%= link_to 'Video Collections', videos_path %>
+</p>
