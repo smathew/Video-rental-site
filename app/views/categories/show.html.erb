@@ -1,8 +1,18 @@
-<h4>Category Details</h4>
+<h3>Category Details</h3>
 <p>
   <b>Name:</b>  <%=h @category.name %>
 </p><br />
-
+<hr />
+<% if @videos.count >= 1 %>
+	<h4><u>Videos under <%=h @category.name %> section</u></h4>
+	<% @videos.each do |video| %>
+		<%= video %>
+		<br />
+	<% end %>
+<% else %>
+	<p>There are no videos currently in this section.</p>
+<% end %>
+<br /><br />
 <% if current_user.admin? %>
 	<%= link_to 'Edit', edit_category_path(@category) %> |
 <% end %>

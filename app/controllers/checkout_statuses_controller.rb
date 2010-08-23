@@ -15,8 +15,9 @@ class CheckoutStatusesController < ApplicationController
 	@checkout_status.video = @video
 	@checkout_status.save
 	flash[:notice] = "Video checked out. To avoid late fees, return in 10 days after receiving the video"
-	#redirect_to @video
-	redirect_to current_user
+	#redirect_to @video	  goes to the video page
+	#redirect_to current_user    goes to the user profile/show page
+	redirect_to checkout_statuses_path
   end
   
   def index
@@ -26,6 +27,6 @@ class CheckoutStatusesController < ApplicationController
   def destroy
 	@checkout_status = CheckoutStatus.find( params[:id] )
 	@checkout_status.delete
-    redirect_to current_user
+    redirect_to videos_path
   end
 end
