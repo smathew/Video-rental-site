@@ -37125,3 +37125,223 @@ Rendered layouts/_stylesheets (0.0ms)
 Rendered layouts/_header (0.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#destroy (for 127.0.0.1 at 2010-08-23 15:12:56) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "id"=>"14", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses"."id" = 14) [0m
+  [4;36;1mCheckoutStatus Delete all (156.2ms)[0m   [0;1mDELETE FROM "checkout_statuses" WHERE ("id" IN (14)) [0m
+Redirected to http://localhost:3000/videos
+Completed in 203ms (DB: 156) | 302 Found [http://localhost/checkout_statuses/14]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-23 15:12:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 62, DB: 16) | 200 OK [http://localhost/videos]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:13:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-23 15:13:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-23 15:14:35) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/home]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:15:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (93.7ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 172ms (View: 141, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:26:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:27:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:28:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 172ms (View: 141, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:28:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:34:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-23 15:35:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered users/_videocollection (31.2ms)
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 172ms (View: 62, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:35:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
