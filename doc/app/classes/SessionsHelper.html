@@ -295,7 +295,7 @@
 3:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sign_in</span>(<span class="ruby-identifier">user</span>)
 4:     <span class="ruby-identifier">user</span>.<span class="ruby-identifier">remember_me!</span>
 5:     <span class="ruby-identifier">cookies</span>[<span class="ruby-identifier">:remember_token</span>] = { <span class="ruby-identifier">:value</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">remember_token</span>,
-6:                                  <span class="ruby-identifier">:expires</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">20</span>.<span class="ruby-identifier">years</span>.<span class="ruby-identifier">from_now</span>.<span class="ruby-identifier">utc</span> }
+6:                                  <span class="ruby-identifier">:expires</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">15</span>.<span class="ruby-identifier">minutes</span>.<span class="ruby-identifier">from_now</span>.<span class="ruby-identifier">utc</span> }
 7:     <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-identifier">user</span>
 8:   <span class="ruby-keyword kw">end</span>
 </pre>

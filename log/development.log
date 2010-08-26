@@ -37345,3 +37345,1336 @@ Rendered layouts/_stylesheets (0.0ms)
 Rendered layouts/_header (15.6ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-23 15:45:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 09:18:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (15.6ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 219ms (View: 62, DB: 16) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 09:19:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 09:37:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 09:40:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-08-24 09:50:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/application
+Rendering categories/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 94, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 09:50:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 11:39:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 156ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 11:45:08) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:02:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:52:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:55:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:56:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:57:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 12:59:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 13:06:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 13:09:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 13:10:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 13:17:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '2dc50f52485551de83c6c485550e24fc6340c12b65007e92e06636d27ceea6fd') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-24 13:31:33) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/signin
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 13:31:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 13:56:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#info (for 127.0.0.1 at 2010-08-24 13:56:41) [GET]
+  Parameters: {"action"=>"info", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/info
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/info]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 13:56:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-24 13:56:56) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"blah@test.com"}, "action"=>"create", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'blah@test.com') LIMIT 1[0m
+  [4;36;1mUser Update (125.0ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-08-24 18:56:56', "encrypted_password" = '25b4da91d1740562e22649983a9bfca24b3e3b90801d531eaff0ede4a532a880', "salt" = 'd9781d253a3fc921a088fa6a6f7db5c929041e0f53609b8e32215d692f6f7047', "remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f' WHERE "id" = 8[0m
+Redirected to http://localhost:3000/home
+Completed in 250ms (DB: 141) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 13:56:56) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/home]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-24 14:35:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 31) [0m
+  [4;35;1mCategory Load (15.6ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 26) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered users/_videocollection (140.6ms)
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 203ms (View: 156, DB: 16) | 200 OK [http://localhost/users/8]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 14:35:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 31) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 26) [0m
+  [4;35;1mCategory Load (15.6ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 62, DB: 16) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 14:37:23) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 14:37:25) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 187ms (View: 172, DB: 16) | 200 OK [http://localhost/home]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 14:37:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 31) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 26) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing CheckoutStatusesController#destroy (for 127.0.0.1 at 2010-08-24 14:37:49) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "id"=>"17", "controller"=>"checkout_statuses"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses"."id" = 17) [0m
+  [4;35;1mCheckoutStatus Delete all (78.1ms)[0m   [0mDELETE FROM "checkout_statuses" WHERE ("id" IN (17)) [0m
+Redirected to http://localhost:3000/videos
+Completed in 125ms (DB: 78) | 302 Found [http://localhost/checkout_statuses/17]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:37:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 14:37:53) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 141, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-24 14:37:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 8) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 26) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered users/_videocollection (46.9ms)
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/users/8]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:38:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2010-08-24 14:38:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT video_id FROM "checkout_statuses" WHERE ("checkout_statuses"."video_id" = 4 AND "checkout_statuses"."user_id" = 8) [0m
+Rendering template within layouts/application
+Rendering videos/show
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/videos/4]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:38:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2010-08-24 14:38:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"29", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 29) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT video_id FROM "checkout_statuses" WHERE ("checkout_statuses"."video_id" = 29 AND "checkout_statuses"."user_id" = 8) [0m
+Rendering template within layouts/application
+Rendering videos/show
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/videos/29]
+
+
+Processing SessionsController#info (for 127.0.0.1 at 2010-08-24 14:38:35) [GET]
+  Parameters: {"action"=>"info", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/info
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+Rendered layouts/_header (31.2ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/info]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:38:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '050f7d20a582ef3eaefaa0fc6c902f53fd4b447a22490aa96551841f6816486f') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-24 14:38:37) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/signin
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 14:38:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#info (for 127.0.0.1 at 2010-08-24 14:38:41) [GET]
+  Parameters: {"action"=>"info", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/info
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/info]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 14:46:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-24 14:46:19) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"abcdefg@hotmail.com"}, "action"=>"create", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'abcdefg@hotmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (93.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-08-24 19:46:19', "encrypted_password" = '338aca580fffd7004f9486a138434c8c84636d476225b20769a6eaa74ed1cfed', "salt" = '7b052bfd150aef5775a8b1f0258f87eafce9e0bbb8d1ed551f5682f39e687cf2', "remember_token" = '5c95603ca7d54543ab02ea68bde14b5f4105003bc67a1b92b7d6fcc1bd848cc5' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/home
+Completed in 156ms (DB: 94) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 14:46:20) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '5c95603ca7d54543ab02ea68bde14b5f4105003bc67a1b92b7d6fcc1bd848cc5') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-24 14:47:03) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/signin
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-24 14:47:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-24 14:47:07) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"abcdefg@hotmail.com"}, "action"=>"create", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'abcdefg@hotmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-24 14:47:17) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"abcdefg@hotmail.com"}, "action"=>"create", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'abcdefg@hotmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (78.1ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-08-24 19:47:17', "encrypted_password" = 'b548175e0db8d401129d05280040fe309ad83dcfc1964e3f6003cb45dec3b520', "salt" = '87025781dc683c07a74ac6fefdd8c4b6ef636425cfc10a74bf30716fcce97e1a', "remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/home
+Completed in 109ms (DB: 78) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-24 14:47:17) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/home]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-08-24 14:47:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/application
+Rendering categories/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#edit (for 127.0.0.1 at 2010-08-24 14:47:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/edit
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1/edit]
+
+
+Processing CategoriesController#update (for 127.0.0.1 at 2010-08-24 14:47:37) [PUT]
+  Parameters: {"category"=>{"name"=>"Kids"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Update (0.0ms)[0m   [0;1mUPDATE "categories" SET "updated_at" = '2010-08-24 19:47:38', "name" = 'Kids' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/categories/1
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/categories/1]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2010-08-24 14:47:38) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT title FROM "videos" WHERE ("videos"."category_id" = 1) [0m
+Rendering template within layouts/application
+Rendering categories/show
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-08-24 14:47:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/application
+Rendering categories/index
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:48:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (15.6ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 47, DB: 16) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2010-08-24 14:48:04) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering videos/edit
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 203ms (View: 172, DB: 0) | 200 OK [http://localhost/videos/4/edit]
+
+
+Processing VideosController#update (for 127.0.0.1 at 2010-08-24 14:48:07) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"ZjeAgJmfx7xJad3ESgTY9883jcRpQCXWY77ynoO6TFI=", "id"=>"4", "video"=>{"title"=>"Barney", "category_id"=>"1"}, "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+Redirected to http://localhost:3000/videos/4
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/videos/4]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2010-08-24 14:48:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"videos"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 4) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT video_id FROM "checkout_statuses" WHERE ("checkout_statuses"."video_id" = 4 AND "checkout_statuses"."user_id" = 5) [0m
+Rendering template within layouts/application
+Rendering videos/show
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/videos/4]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-08-24 14:48:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/application
+Rendering categories/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing CheckoutStatusesController#index (for 127.0.0.1 at 2010-08-24 14:50:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"checkout_statuses"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering checkout_statuses/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mCheckoutStatus Load (0.0ms)[0m   [0;1mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mVideo Load (0.0ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/checkout_statuses]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:50:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:50:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:50:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:50:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 14:50:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:01:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (15.7ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 63, DB: 16) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:01:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (15.7ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 16) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:02:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.7ms)
+Completed in 141ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:03:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 63, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:03:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:03:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 188ms (View: 63, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:04:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:06:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 219ms (View: 156, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:06:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:06:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 203ms (View: 156, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:14:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:14:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 156ms (View: 94, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-24 15:14:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-24 15:30:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered users/_videocollection (31.2ms)
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing SessionsController#home (for 127.0.0.1 at 2010-08-25 09:49:44) [GET]
+  Parameters: {"action"=>"home", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/home
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-25 09:49:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" WHERE ("checkout_statuses".user_id = 5) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 28) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 30) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Rendered users/_videocollection (46.9ms)
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-25 09:49:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2010-08-25 09:50:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"videos"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSELECT * FROM "videos" [0m
+  [4;35;1mCheckoutStatus Load (0.0ms)[0m   [0mSELECT * FROM "checkout_statuses" [0m
+Rendering template within layouts/application
+Rendering videos/index
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 203ms (View: 78, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2010-08-25 09:50:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/application
+Rendering categories/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/categories]
+
+
+Processing SessionsController#info (for 127.0.0.1 at 2010-08-25 09:50:18) [GET]
+  Parameters: {"action"=>"info", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/info
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '1dc860b8a8fff6517179e563d651ad6fb976ac0b02263293dbbe95fdfefe6c9d') LIMIT 1[0m
+Rendered layouts/_header (31.2ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/info]
